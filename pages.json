@@ -1,0 +1,178 @@
+{
+	"pages": [
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				// #ifdef MP 
+				"navigationBarTitleText": "Dloud商城",
+				"navigationStyle": "custom",
+				// "backgroundColorTop": "#4CD964",
+				// #endif 
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "请输入搜索内容",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						},
+						"buttons": [{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue67d",
+								"fontSize": "26",
+								"color": "#303133",
+								"float": "left",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue6b3",
+								"fontSize": "27",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"navigationStyle": "custom"
+			}
+		},
+
+		{
+			"path": "pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "修改资料"
+			}
+		}, {
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ueb8d",
+								"fontSize": "24",
+								"color": "#303133",
+								"width": "46px",
+								"background": "rgba(0,0,0,0)"
+							}
+							// {
+							// 	"fontSrc": "/static/yticon.ttf",
+							// 	"text": "\ue6b3",
+							// 	"fontSize": "28",
+							// 	"color": "#303133",
+							// 	"background": "rgba(0,0,0,0)",
+							// 	"redDot": true
+							// }
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/notice/notice",
+			"style": {
+				"navigationBarTitleText": "通知",
+				// "navigationBarBackgroundColor": "#0843fb",
+				// "navigationBarTextStyle": "white"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/page-two/two",
+			"style": {
+				"navigationBarTitleText": "考勤",
+				// "navigationBarBackgroundColor": "#0843fb",
+				// "navigationBarTextStyle": "white"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/page-three/three",
+			"style": {
+				"navigationBarTitleText": "打卡",
+				// "navigationBarBackgroundColor": "#0843fb",
+				// "navigationBarTextStyle": "white"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/page-four/four",
+			"style": {
+				"navigationBarTitleText": "工作规划",
+				// "navigationBarBackgroundColor": "#0843fb",
+				// "navigationBarTextStyle": "white"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/page-five/five",
+			"style": {
+				"navigationBarTitleText": "任务进度",
+				// "navigationBarBackgroundColor": "#0843fb",
+				// "navigationBarTextStyle": "white"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/page-one/one",
+			"style": {
+				"navigationBarTitleText": "公告",
+				// "navigationBarBackgroundColor": "#0843fb",
+				// "navigationBarTextStyle": "white"
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#0843fb",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab-workbench.png",
+				"selectedIconPath": "static/tab-workbench-current.png",
+				"text": "工作台"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/tab-My.png",
+				"selectedIconPath": "static/tab-My-current.png",
+				"text": "我的"
+			}
+		]
+	}
+}
